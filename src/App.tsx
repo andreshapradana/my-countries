@@ -7,8 +7,8 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <header className="p-4 bg-blue-500 text-white text-center">
-          <h1 className="text-xl font-bold">Country Info App</h1>
+        <header className="p-4 bg-indigo-600 text-white text-center">
+          <h1 className="text-xl font-bold">Country Portal</h1>
         </header>
         <main className="p-4">
           <Routes>
