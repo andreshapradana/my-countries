@@ -1,25 +1,25 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import PaginatedCountries from "./pages/PaginatedCountries.tsx";
+import ChatAssistant from "./components/ChatAssistant.tsx";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="App">
+        <header className="p-4 bg-blue-500 text-white text-center">
+          <h1 className="text-xl font-bold">Country Info App</h1>
+        </header>
+        <main className="p-4">
+          <Routes>
+            <Route path="/" element={<PaginatedCountries />} />
+          </Routes>
+        </main>
+
+        {/* AI Chat Assistant */}
+        <ChatAssistant />
+      </div>
+    </Router>
   );
 }
 
