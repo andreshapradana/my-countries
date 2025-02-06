@@ -61,25 +61,6 @@ const Authentication: React.FC<AuthenticationProps> = ({ onSignIn }) => {
               </>
             )}
           </button>
-
-          <div className="flex items-center justify-between">
-            <div className="text-sm">
-              <a
-                href="#"
-                className="font-medium text-indigo-600 hover:text-indigo-500 transition-colors"
-              >
-                Need help?
-              </a>
-            </div>
-            <div className="text-sm">
-              <a
-                href="#"
-                className="font-medium text-indigo-600 hover:text-indigo-500 transition-colors"
-              >
-                Privacy Policy
-              </a>
-            </div>
-          </div>
         </div>
 
         <p className="mt-4 text-xs text-center text-gray-500">

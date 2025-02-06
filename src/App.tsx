@@ -36,7 +36,7 @@ function App() {
     const userProfile = { email, displayName, photoURL };
     setUser(userProfile);
     localStorage.setItem("user", JSON.stringify(userProfile));
-    setShowModal(true); // Show profile modal after login
+    setShowModal(true); 
   };
 
   const handleSignOut = () => {
