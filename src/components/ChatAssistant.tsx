@@ -24,7 +24,7 @@ const ChatAssistant: React.FC = () => {
 
     const newMessage = { role: "user", content: input };
     setMessages((prev) => [...prev, newMessage]);
-    setInput(""); // Clear the input field
+    setInput("");
     setIsTyping(true);
 
     try {
@@ -78,7 +78,6 @@ const ChatAssistant: React.FC = () => {
         </button>
       ) : (
         <div className="bg-white rounded-lg shadow-xl w-[360px] max-w-full h-[600px] flex flex-col animate-slide-up">
-          {/* Header */}
           <div className="p-4 bg-indigo-600 text-white rounded-t-lg flex justify-between items-center">
             <div className="flex items-center space-x-3">
               <div className="w-8 h-8 rounded-full bg-white flex items-center justify-center">
@@ -130,7 +129,6 @@ const ChatAssistant: React.FC = () => {
             <div ref={messagesEndRef} />
           </div>
 
-          {/* Input Area */}
           <div className="p-4 border-t">
             <div className="flex space-x-2">
               <textarea

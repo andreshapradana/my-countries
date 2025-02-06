@@ -46,7 +46,6 @@ const PaginatedCountries: React.FC = () => {
   const countries = data?.countries || [];
   const totalPages = Math.ceil(countries.length / limit);
 
-  // Slice countries for the current page
   const paginatedCountries = countries.slice(
     (currentPage - 1) * limit,
     currentPage * limit
@@ -73,7 +72,7 @@ const PaginatedCountries: React.FC = () => {
       </p>
       <button
         onClick={() => setSelectedCountry(country)}
-        className="text-sm px-4 py-2 mt-4 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-colors"
+        className="text-sm px-4 py-2 mt-4 bg-indigo-600 text-white rounded-lg hover:bg-indigo-800 transition-colors"
       >
         Details
       </button>
@@ -133,7 +132,7 @@ const PaginatedCountries: React.FC = () => {
         <button
           onClick={handlePrev}
           disabled={currentPage === 1}
-          className="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 disabled:opacity-50"
+          className="px-4 py-2 bg-indigo-500 text-white rounded-lg hover:bg-indigo-600 disabled:opacity-50"
         >
           Previous
         </button>
@@ -143,7 +142,7 @@ const PaginatedCountries: React.FC = () => {
         <button
           onClick={handleNext}
           disabled={currentPage === totalPages}
-          className="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 disabled:opacity-50"
+          className="px-4 py-2 bg-indigo-500 text-white rounded-lg hover:bg-indigo-600 disabled:opacity-50"
         >
           Next
         </button>
